@@ -3,7 +3,6 @@ My notes app
 */
 
 // Libraries -----------------------------------
-const chalk = require('chalk');
 const yargs = require('yargs');
 
 // Modules -------------------------------------
@@ -71,7 +70,7 @@ yargs.command({
     handler(argv) { 
         notes.readNote(argv.title);
     }
-})
+});
 
 // Execute yargs
 yargs.parse();
